@@ -1,0 +1,50 @@
+body {
+	--radius-s: 15px;
+	--radius-m: 25px;
+	--radius-l: 45px;
+	--input-radius: 45px;
+	--tab-radius-active: 45px;
+	--checkbox-radius: 45px;
+	--toggle-radius: 45px;
+	--toggle-thumb-radius: 45px;
+	--slider-thumb-radius: 45px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+.theme-dark {
+	--background-primary: #352510;
+	--background-secondary: #3a280f;
+	--bold-color:  #f4d8b2 !important;
+	--titlebar-background: var(--background-secondary);
+	--titlebar-background-focused: var(--background-primary);
+}
+  
+  .theme-light {
+	--background-primary: #edd2ad;
+	--background-secondary: #f4d8b2;
+	--bold-color: #3a280f !important;
+	--titlebar-background: var(--background-secondary);
+	--titlebar-background-focused: var(--background-primary);
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
